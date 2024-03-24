@@ -1,7 +1,8 @@
-const Button = () => {
+const Button = (props) => {
+    const { type, text = "Default" } = props;
     return (
-        <button>
-            Login
+        <button type={type}>
+            {text}
         </button>
     );
 }

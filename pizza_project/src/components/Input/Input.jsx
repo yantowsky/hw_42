@@ -1,6 +1,7 @@
-const Input = () => {
+const Input = (props) => {
+    const { type, placeholder } = props;
     return (
-        <input type="text" placeholder="Your full name" />
+        <input type={type} placeholder={placeholder} />
     );
 }
 
